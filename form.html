@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="div">
+        <h1 id="titulo">Bem vindo!</h1>
+        <p id="subtitulo">Informe abaixo:</p>
+    </div>
+    <form>
+        <fieldset class="grupo"><legend>informações</legend>
+        <div class="div">
+            <label for="nome"><strong>Nome:</strong></label>
+            <input type="text" name="nome" id="n" required>
+        </div>
+        
+        <div class="div">
+            <label for="sobre"><strong>Sobrenome: </strong></label>
+            <input type="text" name="sobre" id="s" required>
+        </div>
+        </fieldset>
+
+        <div class="div">
+            <label for="email"><strong>Email: </strong></label>
+            <input type="email" name="email" id="e" required>
+        </div>
+
+        <div class="div">
+            <label>escolha um lado da aplicação com a qual você se indentifica</label>
+            <label>
+            <input type="radio" name="radio" value="frontend" checked>Front-End
+        </label>
+            <label>
+            <input type="radio" name="radio2" value="backend" >Back-End
+        </label>
+        <label>
+            <input type="radio" name="radio3" value="fullstack" >Full-Stack
+        </label>
+        </div>
+
+        <div class="div">
+            <label><strong>Senioridade: </strong></label>
+            <select id="cargo">
+                <option selected disabled value="">selecione</option>
+                <option>Senior</option>
+                <option>Pleno</option>
+                <option>Junior</option>
+            </select>
+        </div>
+
+        <div  id="checkbox">
+            <fieldset class="grupo">
+            <label>Quais tecnologias você tem controle?</label>
+            <input type="checkbox" id="tec1" name="tec1" value="HTML">
+            <label for="tec1">HTML</label>
+            <input type="checkbox" id="tec2" name="tec2" value="CSS">
+            <label for="tec2">CSS</label>
+            <input type="checkbox" id="tec3" name="tec3" value="JS">
+            <label for="tec3">JS</label>
+            <input type="checkbox" id="tec4" name="tec4" value="PHP">
+            <label for="tec4">PHP</label>
+            <input type="checkbox" id="tec5" name="tec5" value="JAVA">
+            <label for="tec5">Java</label>
+            <input type="checkbox" id="tec6" name="tec6" value="C#">
+            <label for="teec6">C#</label>
+            <input type="checkbox" id="tec7" name="tec7" value="Pyton">
+            <label for="tec7">Pyton</label>
+            <input type="checkbox" id="tec8" name="tec8" value="Ruby">
+            <label for="tec8">Ruby</label>
+        </div>
+    </fieldset>
+
+    <div class="div">
+
+        <label>Conte sobre a sua experiência nessa área: </label>
+        <textarea row="6" style="width: 26px" id="text" name="area"></textarea>
+
+    </div>
+    <button type="submit" class="botao">enviar formulario</button>
+    </form>
+</body>
+</html>

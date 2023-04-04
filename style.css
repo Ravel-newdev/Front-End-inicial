@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0%;
+}
+#titulo{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 20px;
+color: crimson;
+margin-left: 7%;
+}
+#subtitulo{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 20px;
+color: crimson;
+margin-left: 5%;
+}
+fieldset{
+    border: 0;
+}
+body{
+    background-color: blanchedalmond;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    color: black;
+    margin-left: 36%;
+    margin-top: 2%;
+    justify-content: center;
+}
+input, select, textarea, button{
+    border-radius: 5px 5px 10px black;
+}
+.div{
+    margin-bottom: 1em;
+}
+.div label{
+ margin-bottom: 0.2em;
+ color: cadetblue;
+ display: block;
+}
+fieldset .grupo .div{
+ float: left;
+ margin-right: 1em;
+
+}
+.div input[type="text"], .div input[type="email"], .div select , .div textarea {
+    padding: 0.2em;
+    border: 1px solid wheat;
+    box-shadow: 2px 2px 2px rgb(6, 6, 58);
+    display: block;
+}
+.div select option{
+    padding-right: 1.5em;
+   
+}
+.div input :focus, .div select:focus, .div textarea:focus{
+    background: #E0E0F8;
+}
+.botao{
+    font-size: 1.2em;
+    background: #598565;
+    border: 0;
+    margin-bottom: 1em;
+    color: whitesmoke;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 4px black;
+    text-shadow: 2px 2px 4px black;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50% , -50%);
+}
+.botao:hover{
+    background: #ccbbff;
+    box-shadow: inset 2px 2px 4px rgb(0,0,0,0.2);
+    text-shadow: none;
+}
+#checkbox{
+    display: inline-block;
+}

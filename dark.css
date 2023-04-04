@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+body *{
+    box-sizing: border-box;
+}
+.principal{
+    width: 100vw;
+    height: 100vh;
+    background-color: #043e52;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foto{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.foto > h1,h2{
+    color: #fff;
+}
+.login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+.input{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background-color:#016a6d ;
+    border-radius: 8px;
+   box-shadow: 3px 3px 8px black;
+}
+.input > h1{
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    margin: 0;
+}
+.field{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.field > input{
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    background: #043e52;
+    padding: 10px;
+    color: #fff;
+    box-shadow: 1px 1px 2px black;
+    font-size: 12pt;
+    outline: none;
+    box-sizing: border-box;
+}
+.field > label{
+    color: #fff;
+    margin-bottom: 6px;
+    margin-top: 6px;
+}
+.field > input::placeholder{
+    color: #fff;
+}
+.btn-login{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 9px;
+    box-shadow: 2px 2px 5px black;
+    background-color: #043e52;
+    color: #fff;
+    outline: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+
+}
+.img{
+    width: 60%;
+}
+
+@media only screen and(max-width: 900px){
+    .input{
+        width: 80%;
+    }
+}
+@media only screen and(max-width: 550px){
+    .principal{
+        flex-direction: column;
+    }
+    .foto > h1{
+       display: none;
+    }
+    .login{
+     width: 100%;
+     height: auto;
+    }
+    .foto-image{
+        width: 50vw;
+    }
+}
